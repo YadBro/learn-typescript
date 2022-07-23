@@ -13,7 +13,13 @@
 // console.log(jenisKelamin); // hasilnya 1
 
 // Mengubah nilai default number menjadi string
-enum Category {Grocery = 'GROCERY', Electronic = 'ELECTRONIC', Monitor = 'MONITOR'}
+// enum Category {Grocery = 'GROCERY', Electronic = 'ELECTRONIC', Monitor = 'MONITOR'}
 
-let kategori: Category = Category.Electronic;
-console.log(kategori); // hasilnya ELECTRONIC
+// let kategori: Category = Category.Electronic;
+// console.log(kategori); // hasilnya ELECTRONIC
+
+// Is used for store data wich fix type in database not changed again for long time
+enum Fruits{Banana= 'Banana', Apple= 'Apple', Unknown= 'Unknown'}
+
+let fruit: Fruits = Fruits.Banana;
+console.log(fruit);
