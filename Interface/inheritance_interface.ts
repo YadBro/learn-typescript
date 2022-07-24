@@ -45,3 +45,14 @@ let udin: Students = {
 }
 
 console.log(udin);
+
+/*
+// Yang di extends wajib di masukkan property dari extends tersebut kecuali dari extends tersebut ada optional property
+let mamang: Students = {
+  name: 'Mamang Ganteng',
+  age: 20,
+  gender: Gender.Female
+}
+
+console.log(mamang);
+*/
