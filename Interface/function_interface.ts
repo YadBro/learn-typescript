@@ -1,3 +1,5 @@
+// ?Untuk menentukan type parameter pada function
+
 interface Sum {
   (number1: number, number2: number): number,
 }
