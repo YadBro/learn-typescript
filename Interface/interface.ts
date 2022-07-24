@@ -37,3 +37,34 @@ let riceCook: Foods = {
 // ini tidak akan error seperti yang tadi di atas karena kita menggunakan ? atau optional property
 
 console.log(riceCook);
+
+// ReadOnly Property
+// use keyword readonly for declare a property
+interface Teacher {
+  name: string,
+  numberWa?: number; // apabila ada tanda tanya maka ini optional. Dan bebas mau di deklarasikan atau tidak nantinya di instance barunya
+}
+
+let Ms_Ana: Teacher = {
+  name: 'Ana Zannatu Uzlifat',
+  numberWa: 1020098231,
+}
+
+interface ReadOnlyTeacher {
+  name: string,
+  readonly numberWa?: number;
+}
+
+let Mr_Jana: ReadOnlyTeacher = {
+  name: 'Jana Wijanarko',
+  numberWa: 231839783
+}
+
+Ms_Ana.numberWa = 123123; // Success
+console.log(Ms_Ana);
+console.log(Mr_Jana);
+
+/*
+Mr_Jana.numberWa = 2938103; // Ini akan error: Cannot assign to 'numberWa' because it is a read-only property
+console.log(Mr_Jana);
+*/
