@@ -21,3 +21,19 @@ let student2: Student = {
 
 Ini bakalan error karena property nim tidak di buat
 */
+
+// OPTIONAL PROPERTY
+
+interface Foods {
+  vitamin: string,
+  zat_besi?: string, // apabila ada tanda tanya maka ini optional. Dan bebas mau di deklarasikan atau tidak nantinya di instance barunya
+  name: string,
+}
+
+let riceCook: Foods = {
+  vitamin: '0%',
+  name: 'Nasi Goreng'
+}
+// ini tidak akan error seperti yang tadi di atas karena kita menggunakan ? atau optional property
+
+console.log(riceCook);
