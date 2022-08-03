@@ -1,4 +1,7 @@
 /*
+
+  TIPE DATA DINAMIS (GENERIC)
+
  Tipe data generic sesuai namanya yaitu generic atau membuat secara otomatis tipe data
  ketika si object tersebut di panggil atau di instance.
 */
